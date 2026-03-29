@@ -31,6 +31,23 @@ h1, h2, h3, h4, h5, h6 {
   letter-spacing: 1.3px;
 }
 
+/* Reset body styles inside Payload admin to avoid dark theme bleeding */
+html[data-theme] body {
+  background: unset;
+  color: unset;
+  font-family: unset;
+}
+
+html[data-theme] h1,
+html[data-theme] h2,
+html[data-theme] h3,
+html[data-theme] h4,
+html[data-theme] h5,
+html[data-theme] h6 {
+  font-family: unset;
+  letter-spacing: unset;
+}
+
 /* Hide scrollbar for clean look */
 ::-webkit-scrollbar {
   width: 8px;
